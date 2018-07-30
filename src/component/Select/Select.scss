@@ -1,0 +1,73 @@
+@import '../../global-css/colors.scss';
+
+.select {
+    padding: 0 0 0 30px;
+    cursor: pointer;
+
+    .content {
+        height: 160px;
+        padding: 30px 0 0 0;
+        border-bottom: 1px solid $color-silver;
+
+        .image-container {
+            width: 65px;
+            float: left;
+
+            .image {
+                width: 65px;
+                height: 65px;
+                border-radius: 50px;
+            }
+        }
+
+        .info {
+            margin: 0 0 0 80px;
+
+            .name {
+                color: $color-wasabi;
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin: 0 0 4px 0;
+            }
+
+            .row {
+                margin: 0 0 2px 0;
+                color: $color-silver;
+                font-size: 12px;
+            }
+
+            .rate {
+                color: $color-white;
+                margin: 0 4px 0 0;
+                padding: 2px 9px;
+                border-radius: 3px;
+                text-transform: uppercase;
+            }
+
+            .rate-fair {
+                @extend .rate;
+                background: $color-silver;
+            }
+
+            .rate-low {
+                @extend .rate;
+                background: $color-wasabi;
+            }
+
+            .rate-high {
+                @extend .rate;
+                background: $color-coral;
+            }
+        }
+    }
+}
+
+.selected {
+    @extend .select;
+    background: rgba(73, 206, 139, 0.1);
+    cursor: default;
+}
+
+.disabled-select {
+    pointer-events: none;
+}

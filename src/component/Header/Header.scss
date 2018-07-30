@@ -1,0 +1,28 @@
+@import '../../global-css/colors.scss';
+
+.header {
+    height: 100px;
+    background: $color-space;
+    padding: 22px 40px;
+
+    .title {
+        color: $color-white;
+        font-size: 45px;
+        margin: 0 30px 0 0;
+        letter-spacing: 2px;
+        float: left;
+    }
+
+    .input {
+        color: $color-wasabi;
+        width: 1133px;
+        height: 100%;
+        float: left;
+        font-size: 20px;
+    }
+
+    .input::placeholder {
+        color: $color-wasabi;
+        font-size: 20px;
+    }
+}

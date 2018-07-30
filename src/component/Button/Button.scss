@@ -1,0 +1,17 @@
+@import '../../global-css/colors.scss';
+
+.green-button {
+  background: $color-wasabi;
+  border-radius: 3px;
+  color: $color-white;
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.red-button {
+  @extend .green-button;
+  color: $color-coral;
+  background: $color-white;
+  border: 1px solid $color-coral;
+}

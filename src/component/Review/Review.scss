@@ -1,0 +1,32 @@
+@import '../../global-css/colors.scss';
+
+.review-content {
+  border-bottom: 1px solid $color-silver;
+  padding: 0 0 16px 0;
+  margin: 0 0 22px 0;
+
+  .review-date {
+    color: $color-silver;
+    font-size: 12px;
+    margin: 0 0 4px 0;
+  }
+
+  .review-name {
+    margin: 0 0 8px 0;
+    display: inline;
+    word-wrap: break-word;
+  }
+
+  .review-edit {
+    color: $color-wasabi;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .review-body {
+    font-size: 14px;
+    color: $color-silver;
+    word-wrap: break-word;
+  }
+}
